@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nazca: 303 nuevos geoglifos</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f4ead8;color:#30271f;font-family:Georgia,serif;line-height:1.7}
+header{background:linear-gradient(#241c18a8,#241c18b8),url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600') center/cover;color:white;padding:35px 8% 110px}
+nav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px}
+nav a{color:white;margin-right:15px;text-decoration:none;font-family:Arial}
+.hero{max-width:800px;margin-top:100px}
+.hero small,.tag{color:#c47a42;letter-spacing:3px;font:bold 13px Arial}
+h1{font-size:clamp(42px,7vw,78px);line-height:1.05;margin:20px 0}
+.hero p{font-size:20px;max-width:650px}
+main{max-width:1050px;margin:auto;padding:20px}
+section{padding:65px 0;border-bottom:1px solid #d8c8ae}
+h2{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:10px 0 20px}
+.intro{font-size:20px;max-width:850px}
+.stats,.cards,.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.stat,.card{background:#fffaf1;padding:22px;border-top:4px solid #a65332}
+.stat b{display:block;font-size:42px;color:#a65332}
+.stat span{font:14px Arial;color:#65594c}
+.gallery figure{margin:0;background:#fffaf1}
+.gallery img{width:100%;height:210px;object-fit:cover}
+figcaption{padding:12px;font-size:15px}
+.card h3{margin-top:0}
+.note{background:#eadcc6;padding:15px;border-left:4px solid #a65332;font:14px Arial;margin-top:20px}
+.timeline{border-left:2px solid #a65332;padding-left:25px}
+.timeline article{margin:25px 0}
+.timeline b{color:#a65332}
+#map{height:400px;width:100%;background:#ddd}
+a{color:#914326}
+footer{background:#29231e;color:#f4ead8;padding:35px 8%;font:14px Arial}
+@media(max-width:700px){.stats,.cards,.gallery{grid-template-columns:1fr}.hero{margin-top:65px}nav{line-height:2}}
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+<header id="inicio">
+<nav>
+<strong>ARCHIVO NAZCA</strong>
+<div>
+<a href="#hallazgo">Descubrimiento</a>
+<a href="#figuras">Figuras</a>
+<a href="#mapa">Mapa</a>
+<a href="#investigacion">Investigación</a>
+</div>
+</nav>
+<div class="hero">
+<small>PATRIMONIO ARQUEOLÓGICO DEL PERÚ</small>
+<h1>303 nuevos geoglifos.<br>Un desierto que aún habla.</h1>
+<p>La inteligencia artificial ayudó a los investigadores a localizar cientos de figuras que amplían nuestro conocimiento sobre la antigua cultura Nazca.</p>
+</div>
+</header>
+
+<main>
+<section id="hallazgo">
+<div class="tag">01 / EL DESCUBRIMIENTO</div>
+<h2>Nazca sigue revelando secretos</h2>
+<p class="intro">En septiembre de 2024 se anunció el descubrimiento de <b>303 nuevos geoglifos figurativos</b> en la región de Nazca, en la costa sur del Perú. La investigación combinó inteligencia artificial, imágenes aéreas y trabajo arqueológico en el terreno.</p>
+<div class="stats">
+<div class="stat"><b>303</b><span>Nuevos geoglifos figurativos anunciados</span></div>
+<div class="stat"><b>2022–23</b><span>Periodo del trabajo de campo de confirmación</span></div>
+<div class="stat"><b>IA + campo</b><span>Tecnología y arqueología trabajando juntas</span></div>
+</div>
+<p>Los geoglifos son grandes diseños realizados sobre el suelo. En Nazca, muchos se crearon retirando piedras oscuras de la superficie para dejar visible el terreno más claro que se encuentra debajo. El clima árido del desierto ha contribuido a su conservación.</p>
+</section>
+
+<section id="figuras">
+<div class="tag">02 / LAS REPRESENTACIONES</div>
+<h2>¿Qué figuras podemos encontrar?</h2>
+<p class="intro">Los geoglifos de Nazca representan seres humanos, animales y otros motivos. Los investigadores estudian sus formas, técnicas y relación con el paisaje para comprender mejor a las sociedades que los realizaron.</p>
+<div class="gallery">
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nazca_monkey.jpg" alt="Geoglifo del mono de Nazca">
+<figcaption><b>Representaciones animales</b><br>Algunos geoglifos conocidos representan animales.</figcaption>
+</figure>
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nazca_spider.jpg" alt="Geoglifo de la araña de Nazca">
+<figcaption><b>Diseños sobre el desierto</b><br>Las piedras y el terreno forman figuras de gran tamaño.</figcaption>
+</figure>
+<figure>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nazca_hummingbird.jpg" alt="Geoglifo del colibrí de Nazca">
+<figcaption><b>Un patrimonio extraordinario</b><br>Las figuras conocidas permiten estudiar este paisaje arqueológico.</figcaption>
+</figure>
+</div>
+<div class="note">Estas fotografías muestran geoglifos conocidos de Nazca como referencia visual. No son necesariamente fotografías de los 303 nuevos hallazgos. El significado exacto de cada figura no está confirmado.</div>
+</section>
+
+<section id="mapa">
+<div class="tag">03 / EXPLORA EL TERRITORIO</div>
+<h2>¿Dónde se encuentran?</h2>
+<p class="intro">Los geoglifos se encuentran en el paisaje desértico de la región de Nazca. Explora el mapa para ubicar el área general donde se desarrolla esta historia arqueológica.</p>
+<div id="map"></div>
+<div class="note">El marcador indica la zona general de Nazca, no la ubicación exacta de cada uno de los 303 geoglifos.</div>
+</section>
+
+<section id="investigacion">
+<div class="tag">04 / LA INVESTIGACIÓN</div>
+<h2>¿Cómo los descubrieron?</h2>
+<div class="timeline">
+<article><b>1. Imágenes aéreas</b><p>Los investigadores utilizaron imágenes de la superficie del desierto para examinar grandes extensiones de terreno.</p></article>
+<article><b>2. Inteligencia artificial</b><p>Un sistema de inteligencia artificial analizó las imágenes y señaló lugares donde podían existir geoglifos difíciles de reconocer.</p></article>
+<article><b>3. Verificación arqueológica</b><p>Los especialistas visitaron los lugares señalados para comprobar si realmente existían figuras. La tecnología ayudó a encontrar posibles sitios, pero la confirmación dependió del trabajo humano.</p></article>
+<article><b>4. Registro de los hallazgos</b><p>Después de confirmar las figuras, el equipo pudo ampliar el registro de geoglifos conocidos y estudiar sus características.</p></article>
+</div>
+<p>La investigación fue realizada por un equipo vinculado con la Universidad de Yamagata y el Instituto de Nazca, con la participación del investigador Masato Sakai. IBM Research también colaboró en el enfoque de inteligencia artificial.</p>
+</section>
+
+<section id="importancia">
+<div class="tag">05 / SU IMPORTANCIA</div>
+<h2>¿Por qué es importante este descubrimiento?</h2>
+<div class="cards">
+<div class="card"><h3>Conocer el pasado</h3><p>Los geoglifos ofrecen pistas sobre las ideas, actividades y formas de relacionarse con el paisaje de las antiguas sociedades.</p></div>
+<div class="card"><h3>Proteger el patrimonio</h3><p>Identificar nuevas figuras permite documentarlas y reconocer la importancia de conservarlas.</p></div>
+<div class="card"><h3>Unir disciplinas</h3><p>Este estudio demuestra cómo la arqueología y la tecnología pueden complementarse para investigar nuestro pasado.</p></div>
+</div>
+</section>
+
+<section id="fuentes">
+<div class="tag">06 / FUENTES</div>
+<h2>Conoce más</h2>
+<ul>
+<li>Sakai y colaboradores (2024). <i>AI-accelerated Nazca survey nearly doubles the number of known figurative geoglyphs and sheds light on their purpose.</i> PNAS. <a href="https://doi.org/10.1073/pnas.2407652121" target="_blank">Leer investigación científica</a>.</li>
+<li><a href="https://www.yamagata-u.ac.jp/en/" target="_blank">Universidad de Yamagata</a>.</li>
+<li><a href="https://research.ibm.com/" target="_blank">IBM Research</a>.</li>
+<li>Fotografías de referencia: <a href="https://commons.wikimedia.org/" target="_blank">Wikimedia Commons</a>. Revisa las licencias de cada imagen antes de reutilizarla.</li>
+</ul>
+<div class="note">Este sitio es un recurso educativo. Las interpretaciones arqueológicas pueden cambiar con nuevas investigaciones.</div>
+</section>
+</main>
+
+<footer>
+<b>NAZCA · 303 NUEVOS GEOGLIFOS</b>
+<p>Una exploración educativa del patrimonio arqueológico peruano.</p>
+<a href="#inicio">Volver al inicio ↑</a>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const mapa=L.map('map').setView([-14.83,-74.94],10);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+attribution:'&copy; OpenStreetMap'
+}).addTo(mapa);
+L.marker([-14.83,-74.94]).addTo(mapa)
+.bindPopup('<b>Región de Nazca</b><br>Área general de los geoglifos.');
+</script>
+</body>
+</html>
