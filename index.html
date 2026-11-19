@@ -4,212 +4,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>303 nuevos geoglifos de Nazca | Descubrimiento 2024</title>
+<title>303 nuevos geoglifos de Nazca</title>
 
 <style>
 :root {
-  --arena: #f1e7d6;
-  --papel: #fffaf1;
-  --marron: #382c23;
-  --terracota: #a35438;
-  --oliva: #69734e;
-  --arena-oscura: #d9c5a8;
+  --arena:#f1e7d6;
+  --papel:#fffaf1;
+  --marron:#382c23;
+  --terracota:#a35438;
+  --oliva:#69734e;
+  --borde:#d6c6b0;
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
 body {
-  margin: 0;
-  background: var(--arena);
-  color: var(--marron);
-  font-family: Georgia, serif;
-  line-height: 1.7;
+  margin:0;
+  background:var(--arena);
+  color:var(--marron);
+  font-family:Georgia,serif;
+  line-height:1.7;
 }
 header {
-  min-height: 480px;
-  padding: 85px 9%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
+  min-height:480px;
+  padding:85px 9%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  color:white;
   background:
-    linear-gradient(90deg, rgba(35,25,17,.88), rgba(35,25,17,.35)),
+    linear-gradient(90deg,rgba(35,25,17,.88),rgba(35,25,17,.35)),
     url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85")
     center/cover;
 }
 .eyebrow {
-  font-family: Arial, sans-serif;
-  letter-spacing: 3px;
-  font-size: .8rem;
+  font-family:Arial,sans-serif;
+  letter-spacing:3px;
+  font-size:.8rem;
 }
 header h1 {
-  max-width: 900px;
-  font-size: clamp(2.7rem, 6vw, 5rem);
-  line-height: 1.05;
-  margin: 15px 0;
+  max-width:900px;
+  font-size:clamp(2.7rem,6vw,5rem);
+  line-height:1.05;
+  margin:15px 0;
 }
-header p {
-  max-width: 720px;
-  font-size: 1.15rem;
-}
+header p {max-width:720px;font-size:1.15rem}
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: #382c23;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 22px;
-  padding: 15px;
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#382c23;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+  padding:15px;
 }
 nav a {
-  color: white;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  font-size: .88rem;
+  color:white;
+  text-decoration:none;
+  font-family:Arial,sans-serif;
+  font-size:.88rem;
 }
-nav a:hover { color: #e6b98e; }
-main {
-  width: min(1120px, 90%);
-  margin: auto;
-}
-section { padding: 65px 0; }
+nav a:hover {color:#e6b98e}
+main {width:min(1120px,90%);margin:auto}
+section {padding:60px 0}
 h2 {
-  color: var(--terracota);
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.15;
-  margin-bottom: 18px;
+  color:var(--terracota);
+  font-size:clamp(2rem,4vw,3rem);
+  line-height:1.15;
 }
-h3 { color: var(--oliva); }
-.lead {
-  max-width: 850px;
-  font-size: 1.15rem;
-}
+h3 {color:var(--oliva)}
+.lead {max-width:850px;font-size:1.15rem}
 .stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin: 35px 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:16px;
+  margin:35px 0;
 }
 .stat {
-  background: var(--papel);
-  padding: 23px;
-  border-radius: 12px;
-  border-top: 5px solid var(--terracota);
+  background:var(--papel);
+  padding:23px;
+  border-radius:12px;
+  border-top:5px solid var(--terracota);
 }
 .stat strong {
-  display: block;
-  color: var(--terracota);
-  font-size: 2.5rem;
-  line-height: 1.2;
+  display:block;
+  color:var(--terracota);
+  font-size:2.5rem;
+  line-height:1.2;
 }
-.stat span {
-  font-family: Arial, sans-serif;
-  font-size: .9rem;
-}
+.stat span {font-family:Arial,sans-serif;font-size:.9rem}
 .note {
-  background: #e5d7c2;
-  border-left: 5px solid var(--oliva);
-  padding: 18px 22px;
-  margin: 25px 0;
+  background:#e5d7c2;
+  border-left:5px solid var(--oliva);
+  padding:18px 22px;
+  margin:25px 0;
 }
 figure {
-  margin: 28px 0;
-  background: var(--papel);
-  border-radius: 13px;
-  overflow: hidden;
-  box-shadow: 0 5px 18px #55402b16;
+  margin:28px 0;
+  background:var(--papel);
+  border-radius:13px;
+  overflow:hidden;
 }
 figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #e1d5c4;
+  display:block;
+  width:100%;
+  height:auto;
+  background:#e1d5c4;
+}
+figure iframe {
+  display:block;
+  width:100%;
+  border:0;
 }
 figcaption {
-  padding: 16px 20px;
-  font-family: Arial, sans-serif;
-  font-size: .9rem;
+  padding:16px 20px;
+  font-family:Arial,sans-serif;
+  font-size:.9rem;
 }
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 18px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
 }
 .info-card {
-  background: var(--papel);
-  padding: 22px;
-  border-radius: 12px;
+  background:var(--papel);
+  padding:22px;
+  border-radius:12px;
 }
-.info-card h3 { margin-top: 0; }
+.info-card h3 {margin-top:0}
 .person {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 25px;
-  align-items: center;
-  background: var(--papel);
-  padding: 25px;
-  border-radius: 14px;
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:25px;
+  align-items:center;
+  background:var(--papel);
+  padding:25px;
+  border-radius:14px;
 }
 .initials {
-  background: var(--oliva);
-  color: white;
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  display: grid;
-  place-items: center;
-  font-size: 2.8rem;
+  background:var(--oliva);
+  color:white;
+  border-radius:50%;
+  width:130px;
+  height:130px;
+  display:grid;
+  place-items:center;
+  font-size:2.8rem;
 }
 table {
-  border-collapse: collapse;
-  width: 100%;
-  background: var(--papel);
-  font-family: Arial, sans-serif;
-  font-size: .93rem;
+  border-collapse:collapse;
+  width:100%;
+  background:var(--papel);
+  font-family:Arial,sans-serif;
+  font-size:.93rem;
 }
-th, td {
-  padding: 14px;
-  border: 1px solid #d6c6b0;
-  text-align: left;
-  vertical-align: top;
+th,td {
+  padding:14px;
+  border:1px solid var(--borde);
+  text-align:left;
+  vertical-align:top;
 }
-th {
-  color: white;
-  background: #586347;
-}
+th {color:white;background:#586347}
 .map {
-  width: 100%;
-  height: 420px;
-  border: 0;
-  border-radius: 14px;
+  width:100%;
+  height:420px;
+  border:0;
+  border-radius:14px;
 }
 .map-caption {
-  font-family: Arial, sans-serif;
-  font-size: .9rem;
-  color: #655747;
+  font-family:Arial,sans-serif;
+  font-size:.9rem;
+  color:#655747;
 }
 .timeline {
-  border-left: 3px solid var(--terracota);
-  padding-left: 25px;
-  margin-left: 10px;
+  border-left:3px solid var(--terracota);
+  padding-left:25px;
+  margin-left:10px;
 }
-.timeline article { margin: 25px 0; }
-.timeline strong { color: var(--terracota); }
+.timeline article {margin:25px 0}
+.timeline strong {color:var(--terracota)}
 footer {
-  background: #382c23;
-  color: white;
-  padding: 35px 8%;
-  font-family: Arial, sans-serif;
+  background:#382c23;
+  color:white;
+  padding:35px 8%;
+  font-family:Arial,sans-serif;
 }
-footer a { color: #f0c69f; }
+footer a {color:#f0c69f}
 @media(max-width:650px) {
-  .person { grid-template-columns: 1fr; }
-  .initials { margin: auto; }
-  nav { gap: 12px; }
-  table { font-size: .8rem; }
-  th, td { padding: 9px; }
-  .map { height: 320px; }
+  .person {grid-template-columns:1fr}
+  .initials {margin:auto}
+  nav {gap:12px}
+  table {font-size:.8rem}
+  th,td {padding:9px}
+  .map {height:320px}
 }
 </style>
 </head>
@@ -217,43 +205,43 @@ footer a { color: #f0c69f; }
 <body>
 
 <header>
-  <span class="eyebrow">CULTURA NAZCA · INVESTIGACIÓN ARQUEOLÓGICA · 2024</span>
+  <span class="eyebrow">CULTURA NAZCA · DESCUBRIMIENTO ARQUEOLÓGICO · 2024</span>
   <h1>303 nuevos geoglifos: las figuras que Nazca todavía escondía</h1>
   <p>
-    Gracias a la inteligencia artificial y al trabajo de los arqueólogos,
-    se identificaron cientos de representaciones que permiten conocer
-    más sobre las actividades y la vida de la antigua sociedad Nazca.
+    La inteligencia artificial y el trabajo de los arqueólogos permitieron
+    descubrir cientos de representaciones que amplían nuestro conocimiento
+    sobre la antigua sociedad Nazca.
   </p>
 </header>
 
 <nav>
-  <a href="#hallazgo">El hallazgo</a>
+  <a href="#hallazgo">Descubrimiento</a>
   <a href="#figuras">Nuevas figuras</a>
-  <a href="#significados">¿Qué representan?</a>
+  <a href="#significado">Significados</a>
   <a href="#comparacion">Comparación</a>
-  <a href="#ubicacion">Ubicación</a>
-  <a href="#equipo">Investigadores</a>
-  <a href="#metodo">Tecnología</a>
+  <a href="#ubicacion">Ica</a>
+  <a href="#investigadores">Investigadores</a>
+  <a href="#tecnologia">Tecnología</a>
   <a href="#fuentes">Fuentes</a>
 </nav>
 
 <main>
 
 <section id="hallazgo">
-  <h2>Un descubrimiento que cambió lo que conocíamos de Nazca</h2>
+  <h2>Un descubrimiento que amplió la historia de Nazca</h2>
 
   <p class="lead">
-    En septiembre de 2024 se dio a conocer una investigación que confirmó
+    En septiembre de 2024 se publicó una investigación que confirmó
     303 nuevos geoglifos figurativos en la Pampa de Nazca. A diferencia
     de las enormes figuras que suelen aparecer en fotografías y libros,
-    estos nuevos hallazgos son más pequeños y están hechos en relieve,
-    por lo que resultaban difíciles de reconocer desde el aire.
+    estos hallazgos son más pequeños y están elaborados en relieve.
+    Por ello, resultaban difíciles de identificar desde el aire.
   </p>
 
   <div class="stats">
     <div class="stat">
       <strong>303</strong>
-      <span>Nuevos geoglifos figurativos descubiertos</span>
+      <span>Nuevos geoglifos figurativos confirmados</span>
     </div>
     <div class="stat">
       <strong>9 m</strong>
@@ -261,7 +249,7 @@ footer a { color: #f0c69f; }
     </div>
     <div class="stat">
       <strong>42</strong>
-      <span>Geoglifos geométricos adicionales identificados</span>
+      <span>Geoglifos geométricos adicionales encontrados</span>
     </div>
     <div class="stat">
       <strong>2024</strong>
@@ -270,166 +258,167 @@ footer a { color: #f0c69f; }
   </div>
 
   <div class="note">
-    <strong>Una aclaración:</strong> los 303 nuevos hallazgos son figurativos
-    y de tipo relieve. Los 42 geoglifos geométricos son descubrimientos
-    adicionales y deben contarse por separado.
+    <strong>Dato importante:</strong> los 303 descubrimientos son
+    geoglifos figurativos de tipo relieve. Los 42 geoglifos geométricos
+    son hallazgos adicionales y se cuentan por separado.
   </div>
 </section>
 
 <section id="figuras">
-  <h2>Las nuevas figuras descubiertas</h2>
+  <h2>Las 303 nuevas figuras descubiertas</h2>
 
   <p class="lead">
-    Estas no son las imágenes tradicionales del mono, el colibrí o la araña.
-    Son ejemplos de los nuevos geoglifos documentados por el equipo de
-    investigación. La fotografía reúne 15 figuras de las 303 confirmadas,
-    registradas con drones durante el trabajo de campo.
+    El estudio presenta fotografías auténticas de los nuevos hallazgos,
+    tomadas con drones durante las exploraciones arqueológicas.
+    La siguiente imagen reúne 15 ejemplos de las 303 figuras confirmadas.
   </p>
 
   <figure>
-    <img
-      src="https://pmc.ncbi.nlm.nih.gov/articles/PMC11459208/bin/pnas.2407652121fig02.jpg"
-      alt="Quince ejemplos de los 303 nuevos geoglifos figurativos de tipo relieve, fotografiados con drones">
+    <iframe
+      src="https://elib.dlr.de/206765/1/sakai-et-al-2024-ai-accelerated-nazca-survey-nearly-doubles-the-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose.pdf#page=3&view=FitH"
+      title="Figura 2: quince nuevos geoglifos de Nazca"
+      height="700"
+      loading="lazy">
+    </iframe>
     <figcaption>
-      Ejemplos auténticos de los nuevos geoglifos descubiertos.
-      Imagen correspondiente a la figura 2 del artículo científico de
-      Masato Sakai y su equipo. Las barras de escala equivalen a 5 metros.
+      Figura 2 del artículo de PNAS (2024). Quince de los 303 nuevos
+      geoglifos figurativos de tipo relieve. Son fotografías tomadas
+      con drones durante la verificación arqueológica. Las barras de
+      escala representan 5 metros.
     </figcaption>
   </figure>
 
-  <h3>¿Qué tipos de figuras encontraron?</h3>
+  <h3>¿Qué figuras aparecen en el descubrimiento?</h3>
 
   <div class="gallery">
     <article class="info-card">
       <h3>Camélidos domesticados</h3>
       <p>
-        Se identificaron representaciones de animales domesticados,
-        especialmente camélidos como las llamas. Estos motivos están
-        relacionados con animales que formaban parte de la vida de
-        las comunidades antiguas.
+        Se identificaron representaciones de camélidos, como las llamas.
+        Estos animales formaban parte de la vida de las antiguas
+        comunidades andinas.
       </p>
     </article>
 
     <article class="info-card">
       <h3>Figuras humanas</h3>
       <p>
-        Aparecen seres humanoides con diferentes formas y posturas.
-        Algunas representaciones humanas están relacionadas visualmente
-        con otros motivos, como animales y cabezas.
+        Aparecen representaciones humanoides con diferentes posturas
+        y características. Algunas se encuentran junto a otros motivos.
       </p>
     </article>
 
     <article class="info-card">
       <h3>Cabezas decapitadas</h3>
       <p>
-        El estudio identificó numerosas representaciones de cabezas
-        decapitadas. Los investigadores las relacionan con prácticas
-        rituales de la sociedad Nazca, aunque no se conoce la historia
-        particular de cada imagen.
+        El estudio encontró numerosas representaciones de cabezas
+        decapitadas, un motivo relacionado por los investigadores
+        con prácticas rituales de la sociedad Nazca.
       </p>
     </article>
 
     <article class="info-card">
-      <h3>Personas y animales</h3>
+      <h3>Aves</h3>
       <p>
-        Algunas figuras presentan interacciones entre seres humanos
-        y animales. Estas escenas ayudan a estudiar cómo se representaban
-        las actividades humanas.
+        También se identificaron representaciones de aves,
+        reconocibles por sus formas y extensiones semejantes a alas.
       </p>
     </article>
 
     <article class="info-card">
-      <h3>Aves y felinos</h3>
+      <h3>Felinos y otros animales</h3>
       <p>
-        También aparecen motivos de animales silvestres, como aves
-        y felinos. Sin embargo, estos representan una proporción menor
-        dentro del conjunto de relieves recién estudiados.
+        Entre los motivos aparecen felinos y otros animales silvestres,
+        aunque representan una proporción menor de los geoglifos
+        de relieve.
       </p>
     </article>
 
     <article class="info-card">
-      <h3>Orcas y otros animales</h3>
+      <h3>Escenas de interacción</h3>
       <p>
-        Entre los ejemplos documentados también hay orcas y otros
-        animales. Su presencia muestra la variedad de motivos
-        que aparecen en el arte de Nazca.
+        Algunas figuras combinan seres humanos y animales,
+        lo que permite estudiar cómo las antiguas comunidades
+        representaban sus actividades.
       </p>
     </article>
   </div>
 
   <div class="note">
-    La fotografía científica muestra varios ejemplos juntos; no todos
-    los motivos tienen una interpretación individual confirmada.
-    Las categorías describen lo que los investigadores identificaron
-    visualmente en el estudio.
+    Las descripciones corresponden a los motivos identificados
+    en el artículo científico. No se conoce con certeza el mensaje
+    particular de cada figura.
   </div>
 </section>
 
-<section id="significados">
-  <h2>¿Qué podrían representar estas figuras?</h2>
+<section id="significado">
+  <h2>¿Qué podrían representar los nuevos geoglifos?</h2>
 
   <p>
-    El estudio no ofrece una traducción exacta para cada geoglifo.
-    Sin embargo, al comparar cientos de representaciones, los investigadores
-    encontraron patrones que permiten proponer algunas interpretaciones.
+    Los investigadores analizaron los motivos que se repetían
+    y su ubicación en el desierto. A partir de estos patrones,
+    propusieron interpretaciones sobre las actividades y la función
+    de las representaciones.
   </p>
 
   <div class="gallery">
     <article class="info-card">
-      <h3>La vida cotidiana</h3>
+      <h3>La vida humana y cotidiana</h3>
       <p>
-        Las llamas y otros animales domesticados muestran la importancia
-        de los animales en la vida de las comunidades. Su representación
-        puede relacionarse con actividades humanas y con el entorno.
+        Los camélidos domesticados muestran la importancia de estos
+        animales en las actividades de las comunidades. Las figuras
+        humanas también reflejan la presencia de las personas
+        en las representaciones.
       </p>
     </article>
 
     <article class="info-card">
-      <h3>Las prácticas rituales</h3>
+      <h3>Prácticas rituales</h3>
       <p>
-        Las cabezas decapitadas aparecen en una proporción importante
-        de los relieves. Los investigadores las relacionan con prácticas
-        rituales, aunque no se puede afirmar que todas las figuras
-        tuvieran exactamente el mismo significado.
+        Las cabezas decapitadas constituyen uno de los motivos
+        más frecuentes. Su presencia se relaciona con prácticas
+        rituales conocidas en el contexto arqueológico Nazca.
       </p>
     </article>
 
     <article class="info-card">
-      <h3>La relación entre personas y animales</h3>
+      <h3>Relaciones entre personas y animales</h3>
       <p>
-        Las escenas que combinan seres humanos y animales permiten
-        estudiar cómo los antiguos habitantes de Nazca representaban
-        sus actividades y relaciones con el mundo natural.
+        Las escenas que reúnen seres humanos y animales permiten
+        investigar cómo las comunidades representaban su entorno
+        y sus actividades.
       </p>
     </article>
   </div>
 
   <div class="note">
-    <strong>¿Qué concluyó el equipo?</strong>
-    Los geoglifos pequeños de relieve pudieron compartir información
-    sobre actividades humanas y ser observados por personas o grupos
-    pequeños que recorrían los senderos del desierto.
+    <strong>Interpretación del equipo:</strong> los geoglifos pequeños
+    de relieve pudieron compartir información sobre actividades humanas
+    y ser observados por individuos o grupos pequeños que recorrían
+    los antiguos senderos.
   </div>
 </section>
 
 <section id="comparacion">
-  <h2>Los nuevos geoglifos frente a los antiguos</h2>
+  <h2>Geoglifos nuevos y antiguos: ¿cuáles son sus diferencias?</h2>
 
   <p class="lead">
-    Una de las partes más importantes del estudio fue comparar los nuevos
-    relieves con las grandes figuras de tipo línea que ya se conocían.
-    Los investigadores encontraron diferencias en el tamaño, los motivos
-    representados y su posible función.
+    El estudio comparó los nuevos geoglifos de relieve con las grandes
+    figuras de tipo línea que ya eran conocidas. Encontró diferencias
+    importantes en su tamaño, sus motivos y su posible función.
   </p>
 
   <figure>
-    <img
-      src="https://pmc.ncbi.nlm.nih.gov/articles/PMC11459208/bin/pnas.2407652121fig05.jpg"
-      alt="Comparación científica de los motivos representados en geoglifos de tipo línea y de tipo relieve">
+    <iframe
+      src="https://elib.dlr.de/206765/1/sakai-et-al-2024-ai-accelerated-nazca-survey-nearly-doubles-the-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose.pdf#page=6&view=FitH"
+      title="Figura 5: comparación científica de geoglifos"
+      height="700"
+      loading="lazy">
+    </iframe>
     <figcaption>
-      Figura 5 del estudio: comparación de los motivos de los geoglifos
-      figurativos de tipo línea y de tipo relieve. El gráfico incluye
-      los hallazgos anteriores y los 303 nuevos geoglifos.
+      Figura 5 del artículo de PNAS (2024). Comparación de los motivos
+      de los geoglifos figurativos de tipo línea y de tipo relieve.
+      Los nuevos descubrimientos aparecen diferenciados en el gráfico.
     </figcaption>
   </figure>
 
@@ -437,7 +426,7 @@ footer a { color: #f0c69f; }
     <thead>
       <tr>
         <th>Característica</th>
-        <th>Figuras antiguas conocidas de tipo línea</th>
+        <th>Antiguos geoglifos de tipo línea</th>
         <th>Nuevos geoglifos de tipo relieve</th>
       </tr>
     </thead>
@@ -448,58 +437,58 @@ footer a { color: #f0c69f; }
         <td>Aproximadamente 9 metros</td>
       </tr>
       <tr>
-        <td><strong>Estilo</strong></td>
+        <td><strong>Forma</strong></td>
         <td>Grandes trazos lineales sobre el terreno</td>
-        <td>Figuras pequeñas formadas mediante el relieve de la superficie</td>
+        <td>Figuras pequeñas elaboradas mediante el relieve de la superficie</td>
       </tr>
       <tr>
-        <td><strong>Motivos principales</strong></td>
+        <td><strong>Motivos frecuentes</strong></td>
         <td>Animales silvestres y plantas</td>
         <td>Seres humanos, cabezas y animales domesticados</td>
       </tr>
       <tr>
         <td><strong>Animales</strong></td>
-        <td>Predominan animales silvestres</td>
+        <td>Predominan los animales silvestres</td>
         <td>Destacan los camélidos domesticados</td>
       </tr>
       <tr>
         <td><strong>Ubicación</strong></td>
-        <td>Cerca de grandes líneas y trapecios ceremoniales</td>
+        <td>Relacionados con grandes líneas y trapecios</td>
         <td>Cerca de antiguos senderos del desierto</td>
       </tr>
       <tr>
         <td><strong>Posible función</strong></td>
         <td>Actividades ceremoniales comunitarias</td>
-        <td>Compartir información sobre actividades humanas con individuos o grupos pequeños</td>
+        <td>Comunicación de actividades humanas a individuos o grupos pequeños</td>
       </tr>
     </tbody>
   </table>
 
-  <h3>Una diferencia que llama la atención</h3>
+  <h3>Una diferencia especialmente interesante</h3>
   <p>
-    Los geoglifos de tipo relieve tienen un tamaño promedio de unos 9 metros,
-    mientras que los de tipo línea alcanzan aproximadamente 90 metros.
-    Es decir, las grandes figuras conocidas son alrededor de diez veces
-    más grandes en promedio.
+    Los geoglifos de relieve tienen un tamaño promedio cercano a
+    9 metros, mientras que los grandes geoglifos de tipo línea
+    alcanzan aproximadamente 90 metros. Por lo tanto, estos últimos
+    son alrededor de diez veces más grandes en promedio.
   </p>
 
   <p>
-    Además, el 81,6 % de los geoglifos de relieve representa motivos humanos
-    o elementos modificados por las personas: 33,8 % son humanoides,
-    32,9 % cabezas decapitadas y 14,9 % animales domesticados.
-    En cambio, el 64 % de los geoglifos de tipo línea representa animales
-    silvestres.
+    Además, el 81,6 % de los geoglifos de relieve representa motivos
+    humanos o elementos modificados por las personas: 33,8 % son
+    humanoides, 32,9 % cabezas decapitadas y 14,9 % animales
+    domesticados. En cambio, el 64 % de los geoglifos de tipo línea
+    representa animales silvestres.
   </p>
 
   <div class="note">
-    La comparación se basa en los grupos analizados por el estudio:
-    50 grandes geoglifos figurativos de tipo línea y 683 geoglifos
-    figurativos de tipo relieve, incluyendo los nuevos hallazgos.
+    La comparación del estudio considera 50 grandes geoglifos
+    figurativos de tipo línea y 683 geoglifos figurativos de tipo
+    relieve, incluyendo los nuevos hallazgos.
   </div>
 </section>
 
 <section id="ubicacion">
-  <h2>¿Dónde se encontraron?</h2>
+  <h2>¿Dónde se encontraron? En Nazca, Ica, Perú</h2>
 
   <p class="lead">
     Los nuevos geoglifos fueron identificados en la Pampa de Nazca,
@@ -510,68 +499,71 @@ footer a { color: #f0c69f; }
 
   <iframe
     class="map"
-    title="Mapa de la zona de Nazca, región Ica, Perú"
+    title="Mapa de Nazca en la región de Ica, Perú"
     src="https://www.openstreetmap.org/export/embed.html?bbox=-75.25%2C-14.95%2C-74.65%2C-14.65&layer=mapnik&marker=-14.827%2C-74.938"
     loading="lazy">
   </iframe>
 
   <p class="map-caption">
-    Ubicación general de Nazca, en la región de Ica, Perú.
+    Ubicación general de Nazca, región de Ica, Perú.
     El marcador señala la zona de Nazca, no la ubicación exacta
     de cada uno de los 303 geoglifos.
   </p>
 
   <div class="note">
-    Los hallazgos se distribuyen por diferentes sectores de la Pampa
-    de Nazca. Por eso, el mapa es orientativo y no representa
+    Los nuevos hallazgos se distribuyen por distintos sectores
+    de la Pampa de Nazca. Este mapa es orientativo y no muestra
     las coordenadas individuales de cada figura.
   </div>
 </section>
 
-<section id="equipo">
-  <h2>Los investigadores del descubrimiento</h2>
+<section id="investigadores">
+  <h2>Los investigadores detrás del descubrimiento</h2>
 
   <div class="person">
     <div class="initials">MS</div>
     <div>
       <h3>Masato Sakai</h3>
       <p>
-        Es el principal investigador del estudio y arqueólogo de la
-        Universidad de Yamagata, Japón. Dirigió el trabajo que permitió
-        identificar y confirmar los 303 nuevos geoglifos figurativos.
+        Es el principal investigador del estudio y arqueólogo
+        de la Universidad de Yamagata, Japón. Dirigió la investigación
+        que permitió identificar y confirmar los 303 nuevos
+        geoglifos figurativos.
       </p>
       <p>
-        La investigación fue realizada por un equipo de la Universidad
-        de Yamagata y el Instituto de Nazca, junto con especialistas
-        de IBM Research y otras instituciones.
+        El equipo también contó con Akihisa Sakurai, Siyuan Lu,
+        Jorge Olano, Conrad M. Albrecht, Hendrik F. Hamann
+        y Marcus Freitag, vinculados a instituciones como
+        la Universidad de Yamagata, IBM Research y otras entidades.
       </p>
     </div>
   </div>
 
   <h3>¿Por qué fue importante su trabajo?</h3>
   <p>
-    Durante décadas, los arqueólogos habían identificado grandes figuras
-    en el desierto. Sin embargo, las representaciones pequeñas eran mucho
-    más difíciles de encontrar. El trabajo dirigido por Sakai permitió
-    ampliar el registro de geoglifos conocidos y estudiar sus diferencias.
+    Durante décadas se habían estudiado las enormes figuras
+    del desierto, pero los geoglifos pequeños eran más difíciles
+    de reconocer. El trabajo de Sakai y sus colaboradores permitió
+    ampliar el registro de figuras conocidas y comprender mejor
+    sus diferencias.
   </p>
 </section>
 
-<section id="metodo">
-  <h2>¿Cómo lograron encontrar 303 figuras?</h2>
+<section id="tecnologia">
+  <h2>¿Cómo lograron descubrir las 303 figuras?</h2>
 
   <p>
-    El equipo combinó herramientas tecnológicas con exploraciones
-    arqueológicas. La inteligencia artificial permitió revisar grandes
-    cantidades de imágenes y señalar lugares que podían contener
-    geoglifos todavía no identificados.
+    El equipo combinó inteligencia artificial con exploraciones
+    arqueológicas. La tecnología permitió revisar miles de imágenes
+    y señalar lugares que podían contener geoglifos todavía
+    no identificados.
   </p>
 
   <div class="timeline">
     <article>
-      <strong>1. Análisis de imágenes</strong>
+      <strong>1. Análisis de imágenes aéreas</strong>
       <p>
-        Se utilizaron imágenes aéreas de alta resolución de la región
+        Se utilizaron imágenes de alta resolución de la región
         de Nazca para estudiar la superficie del desierto.
       </p>
     </article>
@@ -579,64 +571,73 @@ footer a { color: #f0c69f; }
     <article>
       <strong>2. Inteligencia artificial</strong>
       <p>
-        El sistema analizó las imágenes y propuso posibles ubicaciones
-        de geoglifos pequeños.
+        Un sistema de inteligencia artificial analizó las imágenes
+        y señaló posibles ubicaciones de geoglifos pequeños.
       </p>
     </article>
 
     <article>
-      <strong>3. Verificación arqueológica</strong>
+      <strong>3. Revisión de los candidatos</strong>
       <p>
-        Entre septiembre de 2022 y febrero de 2023, los investigadores
-        visitaron los lugares seleccionados para comprobar los hallazgos.
+        Los investigadores examinaron las sugerencias del sistema
+        y seleccionaron los lugares con mayor posibilidad
+        de contener figuras auténticas.
       </p>
     </article>
 
     <article>
-      <strong>4. Registro con drones</strong>
+      <strong>4. Verificación en el terreno</strong>
       <p>
-        Las figuras confirmadas fueron documentadas mediante fotografías
-        tomadas con drones durante el trabajo de campo.
+        Entre septiembre de 2022 y febrero de 2023, los arqueólogos
+        visitaron los lugares seleccionados para confirmar
+        los descubrimientos.
       </p>
     </article>
 
     <article>
-      <strong>5. Publicación del descubrimiento</strong>
+      <strong>5. Fotografías con drones</strong>
+      <p>
+        Las figuras confirmadas fueron documentadas mediante
+        imágenes tomadas con drones.
+      </p>
+    </article>
+
+    <article>
+      <strong>6. Publicación científica</strong>
       <p>
         Los resultados se publicaron el 23 de septiembre de 2024
-        en la revista científica PNAS.
+        en la revista Proceedings of the National Academy of Sciences.
       </p>
     </article>
   </div>
 
   <div class="note">
     La inteligencia artificial ayudó a localizar posibles figuras,
-    pero fueron los arqueólogos quienes verificaron los hallazgos
+    pero fueron los arqueólogos quienes comprobaron los hallazgos
     en el terreno.
   </div>
 </section>
 
 <section>
-  <h2>¿Por qué este descubrimiento es importante?</h2>
+  <h2>¿Por qué es importante este descubrimiento?</h2>
 
   <p class="lead">
-    Los 303 nuevos geoglifos demuestran que Nazca todavía guarda
-    información que puede ser descubierta mediante la investigación.
-    También permiten conocer mejor las representaciones relacionadas
-    con las personas, los animales domesticados y las prácticas
-    de las antiguas comunidades.
+    Los 303 nuevos geoglifos demuestran que Nazca todavía conserva
+    información que puede descubrirse mediante la investigación
+    arqueológica y las nuevas tecnologías.
   </p>
 
   <p>
-    La investigación no solo aumentó el número de figuras conocidas:
-    también permitió comprender que los geoglifos de Nazca podían
-    tener diferentes características y posibles funciones según
-    su tamaño, sus motivos y el lugar donde fueron construidos.
+    El hallazgo permitió conocer mejor las representaciones relacionadas
+    con los seres humanos, los animales domesticados y las prácticas
+    de las antiguas comunidades. También demostró que los geoglifos
+    no tenían necesariamente una sola función, sino que podían
+    estar relacionados con distintas actividades sociales y ceremoniales.
   </p>
 </section>
 
 <section id="fuentes">
-  <h2>Fuentes de información</h2>
+  <h2>Fuentes de investigación</h2>
   <ul>
     <li>
       Sakai, M. y colaboradores (2024).
@@ -647,16 +648,21 @@ footer a { color: #f0c69f; }
       Proceedings of the National Academy of Sciences.
     </li>
     <li>
-      <a href="https://www.yamagata-u.ac.jp/en/information/info/20240924/"
+      <a href="https://www.yamagata-u.ac.jp/en/information/info/20240924"
          target="_blank">
-        Universidad de Yamagata: anuncio oficial del descubrimiento
-        de 303 nuevos geoglifos.
+        Universidad de Yamagata: anuncio oficial del descubrimiento.
       </a>
     </li>
     <li>
       <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11459208/"
          target="_blank">
         Artículo científico completo en PubMed Central.
+      </a>
+    </li>
+    <li>
+      <a href="https://research.ibm.com/publications/ai-accelerated-nazca-survey-nearly-doubles-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose"
+         target="_blank">
+        IBM Research: información sobre la investigación.
       </a>
     </li>
   </ul>
