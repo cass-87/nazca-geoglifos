@@ -25,8 +25,8 @@ body {
   line-height:1.7;
 }
 header {
-  min-height:480px;
-  padding:85px 9%;
+  min-height:470px;
+  padding:80px 9%;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -56,14 +56,14 @@ nav {
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  gap:20px;
+  gap:18px;
   padding:15px;
 }
 nav a {
   color:white;
   text-decoration:none;
   font-family:Arial,sans-serif;
-  font-size:.88rem;
+  font-size:.86rem;
 }
 nav a:hover {color:#e6b98e}
 main {width:min(1120px,90%);margin:auto}
@@ -105,22 +105,26 @@ figure {
   background:var(--papel);
   border-radius:13px;
   overflow:hidden;
+  box-shadow:0 5px 18px #55402b16;
 }
-figure img {
+.pdf-viewer {
   display:block;
   width:100%;
-  height:auto;
-  background:#e1d5c4;
-}
-figure iframe {
-  display:block;
-  width:100%;
+  height:760px;
   border:0;
+  background:#ded2c0;
 }
 figcaption {
   padding:16px 20px;
   font-family:Arial,sans-serif;
   font-size:.9rem;
+}
+.pdf-link {
+  display:inline-block;
+  margin:12px 20px 20px;
+  color:var(--terracota);
+  font-family:Arial,sans-serif;
+  font-weight:bold;
 }
 .gallery {
   display:grid;
@@ -184,6 +188,7 @@ th {color:white;background:#586347}
 }
 .timeline article {margin:25px 0}
 .timeline strong {color:var(--terracota)}
+a {overflow-wrap:anywhere}
 footer {
   background:#382c23;
   color:white;
@@ -198,6 +203,7 @@ footer a {color:#f0c69f}
   table {font-size:.8rem}
   th,td {padding:9px}
   .map {height:320px}
+  .pdf-viewer {height:550px}
 }
 </style>
 </head>
@@ -265,30 +271,35 @@ footer a {color:#f0c69f}
 </section>
 
 <section id="figuras">
-  <h2>Las 303 nuevas figuras descubiertas</h2>
+  <h2>Las nuevas figuras descubiertas</h2>
 
   <p class="lead">
-    El estudio presenta fotografías auténticas de los nuevos hallazgos,
-    tomadas con drones durante las exploraciones arqueológicas.
+    El artículo científico presenta fotografías auténticas de los nuevos
+    hallazgos, tomadas con drones durante las exploraciones arqueológicas.
     La siguiente imagen reúne 15 ejemplos de las 303 figuras confirmadas.
   </p>
 
   <figure>
     <iframe
-      src="https://elib.dlr.de/206765/1/sakai-et-al-2024-ai-accelerated-nazca-survey-nearly-doubles-the-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose.pdf#page=3&view=FitH"
-      title="Figura 2: quince nuevos geoglifos de Nazca"
-      height="700"
+      class="pdf-viewer"
+      src="https://elib.dlr.de/206765/1/sakai-et-al-2024-ai-accelerated-nazca-survey-nearly-doubles-the-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose.pdf#page=3&zoom=page"
+      title="Figura 2: fotografías de quince nuevos geoglifos de Nazca"
       loading="lazy">
     </iframe>
     <figcaption>
-      Figura 2 del artículo de PNAS (2024). Quince de los 303 nuevos
-      geoglifos figurativos de tipo relieve. Son fotografías tomadas
-      con drones durante la verificación arqueológica. Las barras de
-      escala representan 5 metros.
+      Figura 2 del artículo científico de PNAS (2024).
+      Quince ejemplos de los 303 nuevos geoglifos figurativos.
+      Las fotografías fueron tomadas con drones y las barras de escala
+      representan 5 metros.
     </figcaption>
+    <a class="pdf-link"
+       href="https://elib.dlr.de/206765/1/sakai-et-al-2024-ai-accelerated-nazca-survey-nearly-doubles-the-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose.pdf"
+       target="_blank">
+       Abrir el artículo científico original
+    </a>
   </figure>
 
-  <h3>¿Qué figuras aparecen en el descubrimiento?</h3>
+  <h3>¿Qué tipos de figuras encontraron?</h3>
 
   <div class="gallery">
     <article class="info-card">
@@ -410,9 +421,9 @@ footer a {color:#f0c69f}
 
   <figure>
     <iframe
-      src="https://elib.dlr.de/206765/1/sakai-et-al-2024-ai-accelerated-nazca-survey-nearly-doubles-the-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose.pdf#page=6&view=FitH"
-      title="Figura 5: comparación científica de geoglifos"
-      height="700"
+      class="pdf-viewer"
+      src="https://elib.dlr.de/206765/1/sakai-et-al-2024-ai-accelerated-nazca-survey-nearly-doubles-the-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose.pdf#page=6&zoom=page"
+      title="Figura 5: comparación científica entre geoglifos de tipo línea y relieve"
       loading="lazy">
     </iframe>
     <figcaption>
@@ -420,6 +431,11 @@ footer a {color:#f0c69f}
       de los geoglifos figurativos de tipo línea y de tipo relieve.
       Los nuevos descubrimientos aparecen diferenciados en el gráfico.
     </figcaption>
+    <a class="pdf-link"
+       href="https://elib.dlr.de/206765/1/sakai-et-al-2024-ai-accelerated-nazca-survey-nearly-doubles-the-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose.pdf"
+       target="_blank">
+       Consultar la comparación en el artículo original
+    </a>
   </figure>
 
   <table>
@@ -660,9 +676,9 @@ footer a {color:#f0c69f}
       </a>
     </li>
     <li>
-      <a href="https://research.ibm.com/publications/ai-accelerated-nazca-survey-nearly-doubles-number-of-known-figurative-geoglyphs-and-sheds-light-on-their-purpose"
+      <a href="https://www.dlr.de/en/eoc/latest/news/2024/accelerated-discovery-nasca-geoglyphs-by-ai"
          target="_blank">
-        IBM Research: información sobre la investigación.
+        Centro Aeroespacial Alemán: información sobre el descubrimiento.
       </a>
     </li>
   </ul>
